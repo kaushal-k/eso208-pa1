@@ -35,9 +35,9 @@ switch method
     case 2 
         falseposition(funct,x1,x2,maxiter,maxrelerror);
     case 3 
-        fixedpoint();
+        fixedpoint(phix,a,maxiter,maxrelerror);
     case 4
-        newtonraphson();
+        newtonraphson(funct,fdashx,a,maxiter,maxrelerror);
     case 5
         secant(funct,x1,x2,maxiter,maxrelerror);
 end    

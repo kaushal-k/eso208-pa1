@@ -1,7 +1,7 @@
 function secant(funct,x1,x2,maxiter,maxrelerror)
     global iterations;
     global err;
-    err = double.empty(1,maxiter);
+    err = double.empty(0,maxiter);
     if feval(funct,x1)==0
         iterations = 1;
         err(1) = 0;
