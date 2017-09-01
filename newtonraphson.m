@@ -22,7 +22,7 @@ function newtonraphson(funct,fdash,xnot,maxiter,maxrelerror)
                 root = xnot;
                 break;
             else
-                err(i) = (abs(x-xnot))/x * 100;
+                err(i) = abs((x-xnot)/x) * 100;
                 root = x;
                 xnot = x;
             end

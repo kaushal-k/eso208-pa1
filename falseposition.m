@@ -28,7 +28,7 @@ function falseposition(funct, x1, x2, maxiter, maxrelerror)
                 break;
             end
             if i>1
-                err(i) = (abs(rootcache-xfalse))/xfalse * 100;
+                err(i) = abs((rootcache-xfalse)/xfalse) * 100;
                 if err(i)<=maxrelerror
                     break;
                 end

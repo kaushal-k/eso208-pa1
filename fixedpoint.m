@@ -16,7 +16,7 @@ function fixedpoint(phix,xnot,maxiter,maxrelerror)
                 err(i) = 0;
                 break;
             else
-                err(i) = (abs(x-xnot))/x * 100;
+                err(i) = abs((x-xnot)/x) * 100;
                 root = x;
                 xnot = x;
             end

@@ -1,5 +1,5 @@
 %ESO208 Programming assignment 1 Solutions to non linear equations
-funct = input('Enter f(x):');
+funct = input('Enter f(x):','s');
 %funct = str2fun(['@(x)' funct]);
 funct = inline(funct, 'x');
 method = input('Choose a method\n(1)Bisection\n(2)False Position\n(3)Fixed-Point\n(4)Newton-Raphson\n(5)Secant\n');

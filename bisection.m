@@ -28,7 +28,7 @@ function bisection(funct,x1,x2,maxiter,maxrelerror)
                 x1 = xmid;
             end
             if i>1
-                err(i) = (abs(rootcache-xmid))/xmid * 100;
+                err(i) = abs((rootcache-xmid)/xmid) * 100;
                 if(err(i)<=maxrelerror)
                     break;
                 end

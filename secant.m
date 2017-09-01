@@ -20,7 +20,7 @@ function secant(funct,x1,x2,maxiter,maxrelerror)
             fnext = feval(funct,xnext);
             x1 = x2;
             x2 = xnext;
-            err(i) = (abs(x1-x2))/x2 * 100;
+            err(i) = abs((x1-x2)/x2) * 100;
             root = x2;
             if fnext==0
                 err(i) = 0;
